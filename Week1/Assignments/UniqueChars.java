@@ -14,10 +14,10 @@ static char[] uniqueCharacters(String s) {
 int len = stringLength(s);
 char[] unique = new char[len];
 int index = 0;
-for (int i = 0; i &lt; len; i++) {
+for (int i = 0; i < len; i++) {
 char c = s.charAt(i);
 boolean isUnique = true;
-for (int j = 0; j &lt; i; j++) {
+for (int j = 0; j < i; j++) {
 if (s.charAt(j) == c) {
 isUnique = false;
 break;
@@ -31,10 +31,10 @@ return result;
 }
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
-System.out.print(&quot;Enter a string: &quot;);
+System.out.print("Enter a string: ");
 String s = sc.nextLine();
 char[] unique = uniqueCharacters(s);
-System.out.print(&quot;Unique characters: &quot;);
-for (char c : unique) System.out.print(c + &quot; &quot;);
+System.out.print("Unique characters: ");
+for (char c : unique) System.out.print(c + " ");
 }
 }

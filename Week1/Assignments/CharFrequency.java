@@ -2,12 +2,12 @@ import java.util.Scanner;
 public class CharFrequency {
 static String[][] charFrequency(String s) {
 int[] freq = new int[256];
-for (int i = 0; i &lt; s.length(); i++) {
+for (int i = 0; i < s.length(); i++) {
 freq[s.charAt(i)]++;
 }
 String[][] result = new String[s.length()][2];
 int index = 0;
-for (int i = 0; i &lt; s.length(); i++) {
+for (int i = 0; i < s.length(); i++) {
 char c = s.charAt(i);
 if (freq[c] != 0) {
 result[index][0] = String.valueOf(c);
@@ -22,11 +22,11 @@ return finalResult;
 }
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
-System.out.print(&quot;Enter a string: &quot;);
+System.out.print("Enter a string: ");
 String s = sc.nextLine();
 String[][] freq = charFrequency(s);
 for (String[] row : freq) {
-System.out.println(row[0] + &quot; : &quot; + row[1]);
+System.out.println(row[0] + " : " + row[1]);
 }
 }
 }

@@ -2,7 +2,7 @@ public class StringCreationManipulation {
     public static void main(String[] args) {
 
         // === Different ways to create strings ===
-        String s1 = "Hello";                    // string literal
+        String s1 = "Hello";                // string literal
         String s2 = new String("World");        // using 'new' keyword
         char[] charArray = {'J', 'a', 'v', 'a'};
         String s3 = new String(charArray);      // from char array

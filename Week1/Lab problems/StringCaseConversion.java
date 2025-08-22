@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class StringCaseConversion {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
-System.out.print(&quot;Enter a string: &quot;);
+System.out.print("Enter a string: ");
 String input = sc.next();
-System.out.println(&quot;Uppercase: &quot; + input.toUpperCase());
-System.out.println(&quot;Lowercase: &quot; + input.toLowerCase());
+System.out.println("Uppercase: " + input.toUpperCase());
+System.out.println("Lowercase: " + input.toLowerCase());
 sc.close();
 }
 }

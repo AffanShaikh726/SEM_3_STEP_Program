@@ -13,12 +13,12 @@ return count;
 }
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
-System.out.print(&quot;Enter a string: &quot;);
+System.out.print("Enter a string: ");
 String input = sc.next();
 int customLength = findLength(input);
 int builtinLength = input.length();
-System.out.println(&quot;Length using custom method: &quot; + customLength);
-System.out.println(&quot;Length using built-in method: &quot; + builtinLength);
+System.out.println("Length using custom method: " + customLength);
+System.out.println("Length using built-in method: " + builtinLength);
 sc.close();
 }
 }
