@@ -18,6 +18,10 @@ class Student {
     private String studentId;
     private String studentName;
     private String className;
+
+    public String getStudentName() {
+        return studentName;
+    }
     private String[] subjects;
     private double[][] marks;
     private double gpa;
@@ -169,7 +173,7 @@ public class StudentGradeManagement {
         Student[] toppers = Student.getTopPerformers(students, 2);
         System.out.println("Top Performers:");
         for (Student s : toppers) {
-            System.out.println(s.studentName);
+            System.out.println(s.getStudentName());
         }
     }
 }
